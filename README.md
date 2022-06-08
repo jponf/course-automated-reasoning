@@ -104,14 +104,15 @@ description of each of them.
 
     ```
     a := 1; b := 1;
-    for i := 1 to 10 do
+    for i := 1 to 10 do {
 
-    if ? then {
-      a := a+2b;
-      b := b+i
-    } else {
-      b := a+b;
-      a := a+i
+      if ? then {
+         a := a+2b;
+         b := b+i
+      } else {
+         b := a+b;
+         a := a+i
+      }
     }
 
     if b = 600+n then {
