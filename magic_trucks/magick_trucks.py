@@ -72,11 +72,14 @@ def main(argv=None) -> None:
     # Optimize number of prittles pallets
     obj = solver.maximize(p_num)
 
-    solver.check()
-    if solver.lower(obj).as_long() != solver.upper(obj).as_long():
-        print("[WARNING] Could not find optimal solution")
+    result = solver.check()
+    if result == z3.sat:
+        if solver.lower(obj).as_long() != solver.upper(obj).as_long():
+            print("[WARNING] Could not find optimal solution")
+        print("Number of prittles pallets:", solver.lower(obj))
+    else:
+        print("Unsatisfiable")
 
-    print("Number of prittles pallets:", solver.lower(obj))
     # print(solver.model())
     sys.exit(0)
 
