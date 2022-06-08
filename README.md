@@ -6,6 +6,7 @@ Coursea's automatic reasoning course assignments
 
 Week 2 has four different practical assignments. For simplicity the problem descriptions are provided below.
 
+---
 ### Filling trucks for a magic factory
 
  1. Eight trucks have to deliver pallets of obscure building blocks
@@ -41,6 +42,7 @@ Week 2 has four different practical assignments. For simplicity the problem desc
     Again, investigate what is the maximum number of pallets of prittles that
     can be delivered.
 
+---
 ### A sudoku variant
 
  1. Below you see a SUDOKU variant.
@@ -63,7 +65,35 @@ Week 2 has four different practical assignments. For simplicity the problem desc
     more feasible. Can you do this?
 
     As the answer you should give the 9 digit number formed by the lowest line. 
+    
+---
+### Job Scheduling
 
+ 1. Ten jobs numbered from 1 to 10 have to be executed without interrupt, and
+    satisfying the following requirements:
+   
+    * The running time of job i is i + 10, for i = 1, 2, . . . , 10.
+    *  Job 3 may only start if jobs 1 and 2 have been finished.
+    * Job 6 may only start if jobs 2 and 4 have been finished.
+    * Job 7 may only start if jobs 1, 4 and 5 have been finished.
+    * Job 8 may only start if jobs 3 and 6 have been finished.
+    * Job 9 may only start if jobs 6 and 7 have been finished.
+    * Job 10 may only start if jobs 8 and 9 have been finished.
 
+    What is the minimal total running time?
+
+    (Hint: if you do not use minimize, you may do this by binary search)
+
+ 2. Take all requirements from Question 1, but now additionally it is 
+    required that job 7 should not start earlier than job 8.
+
+    What is the minimal total running time?
+   
+ 3. Take all requirements from Question 1 and Question 2, but now
+    additionally it is required that jobs 3, 4 and 5 are never allowed to
+    run at the same time, since they need a special equipment of which only
+    one copy is available.
+
+    What is the minimal total running time?
 
 
