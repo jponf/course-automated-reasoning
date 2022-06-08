@@ -4,7 +4,8 @@ Coursea's automatic reasoning course assignments
 
 ## Week 2
 
-Week 2 has four different practical assignments. For simplicity the problem descriptions are provided below.
+Week 2 has four different practical assignments, below you'll find the
+description of each of them.
 
 ### Filling trucks for a magic factory
 
